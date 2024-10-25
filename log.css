@@ -1,0 +1,185 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+font-family: "Poppins", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* scroll-behavior: smooth; 
+scroll-padding: 3rem;  */
+text-decoration: none;
+list-style: none;
+}
+/* colors vartion */
+:root{
+    --main-color:#312783;
+    --sedend-color:#36a9e1;
+    --text-color:#9bd4ea;
+    --text-color2:#e94e1b;
+    --background:#fff;
+    --normla:#0000;
+    --box-shadaw-:2px 2px 18px rbg(14 52 54 / 15%);
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section{
+    padding: 4.5rem 0 3rem;
+}
+header{
+    display: block;
+    width: 100%;
+    background:var(--background);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--sedend-color);
+    text-transform: uppercase;
+}
+.logo img{
+    width: 30px;
+    color: #e94e1b;
+    font-size: 5rem;
+    left:-30px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--main-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover{
+    background-color: #e94e1b;
+    border-radius: 12px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+#menu{
+    display: none;
+}
+.btn{
+    padding: 8px 22px;
+    background: var(--main-color);
+    color: var(--background);
+    border-radius: 5rem;
+}
+.btn:hover{
+    background: #3492fd;
+}
+/* log in page */
+.login{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
+    min-height:100vh ;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 9rem;
+}
+.login-container h2{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.login-container p{
+    font-size: 0.9rem;
+    color: #312783;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+}
+.login-container form span{
+    font-size: 1rem;
+    color:#e94e1b;
+    margin-bottom: 1px;
+}
+.login-container form input{
+    border: 1px solid #8a8a8a;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 0.4rem;
+    background: #fbfbfb;
+}
+.login-container form .button{
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--background);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.login-container form a{
+    font-size: 0.9rem;
+    text-align: right;
+}
+a .btn{
+    text-align: center;
+}
+.login-image img{
+    width: auto;
+    height: 36rem;
+    margin-top: -11rem;
+    padding: 5rem;
+    border-radius: 9rem 0 10rem 0;
+}
+/* footer */
+.footer{
+    background: var(--sedend-color);
+    color: var(--background);
+    border-radius: 5rem 0 0 0;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+}
+.footer-container h2{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.footer-box{
+    display: flex;
+    flex-direction:column;
+}
+.footer-box h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer-box a{
+    font-size: 1rem;
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+}
+.footer-box a:hover{
+    color: #e94e1b;
+}
+
